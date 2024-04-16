@@ -47,7 +47,7 @@ class File extends Driver
         }
 
         if (empty($this->options['path'])) {
-            $this->options['path'] = runtime_path() . 'cache';
+            $this->options['path'] = runtime_path() . '/cache';
         }
 
         if (!str_ends_with($this->options['path'], DIRECTORY_SEPARATOR)) {

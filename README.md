@@ -22,8 +22,8 @@ return [
         'file'   =>  [
             // 驱动方式
             'type'   => 'file',
-            // 设置不同的缓存保存目录
-            'path'   => '../runtime/file/',
+            // 设置不同的缓存保存目录 __DIR__ . '/../runtime/file/'
+            'path'   => runtime_path() . '/file/',
         ],  
         // redis缓存
         'redis'   =>  [
@@ -42,7 +42,6 @@ use bilulanlv\ThinkCache\facade\ThinkCache;
 ThinkCache::set('name', $value, 3600);
 ThinkCache::remember('start_time', time());
 ThinkCache::tag('tag')->set('name1','value1');
-ThinkCache::tag('tag')->set('name2','value2');
 ThinkCache::tag('tag')->clear();
 
 UserModel::where('id', 1)->cache($cache['key'], $cache['expire'], $cache['tag'])->find();
