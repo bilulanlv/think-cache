@@ -24,7 +24,7 @@ use think\helper\Arr;
 class CacheManager extends Manager implements CacheInterface
 {
 
-    protected $namespace = '\\extend\\cache\\driver\\';
+    protected $namespace = '\\bilulanlv\\ThinkCache\\driver\\';
 
     /**
      * 默认驱动
