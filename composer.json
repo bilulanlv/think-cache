@@ -1,0 +1,24 @@
+{
+    "name": "biluanlv/think-cache",
+    "description": "Thinkphp8提取的Think-cache组件",
+    "type": "library",
+    "require": {
+        "php": ">=8.0.0",
+        "topthink/think-container": "^2.0",
+        "psr/simple-cache": "^1.0|^2.0|^3.0"
+    },
+    "require-dev": {
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "bilulanlv\\ThinkCache\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Blue",
+            "email": "bilulanlv168@gmail.com"
+        }
+    ]
+}
