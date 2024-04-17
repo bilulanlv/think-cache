@@ -217,6 +217,12 @@ class Redis extends Driver
     {
         $key = $this->getCacheKey($name);
         $this->handler->sAdd($key, $value);
+
+        // 避免tag键长期占用内存，设置一个超过其他缓存的过期时间
+        $tagExpire = $this->options['tag_expire'] ?? 0;
+        if ($tagExpire){
+            $this->handler->expire($key, $tagExpire);
+        }
     }
 
     /**
