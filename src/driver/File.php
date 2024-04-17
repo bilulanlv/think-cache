@@ -146,7 +146,6 @@ class File extends Driver
      */
     public function set($name, $value, $expire = null): bool
     {
-        var_dump($name);
         if (is_null($expire)) {
             $expire = $this->options['expire'];
         }
