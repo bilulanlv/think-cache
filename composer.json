@@ -1,5 +1,5 @@
 {
-    "name": "biluanlv/think-cache",
+    "name": "bilulanlv/think-cache",
     "description": "Thinkphp8提取的Think-cache组件",
     "type": "library",
     "require": {
