@@ -10,7 +10,7 @@ composer require bilulanlv/think-cache
 ```
 
 ## 配置文件
-配置文件参考文档，如下所示，默认自动安装路径为config/plugin/bilulanlv/think-cache.php
+配置文件参考文档，如下所示，默认自动安装路径为config/plugin/bilulanlv/app.php
 ```php
 // 如果ThinkORM需要使用缓存，请取消注释，或者在其他合适的地方引入
 \think\facade\Db::setCache(new \bilulanlv\ThinkCache\CacheManager());
