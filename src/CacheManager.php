@@ -45,10 +45,10 @@ class CacheManager extends Manager implements CacheInterface
     public function getConfig(string $name = null, $default = null)
     {
         if (!is_null($name)) {
-            return Config::get('thinkcache.' . $name, $default);
+            return config('plugin.bilulanlv.think-cache.app.' . $name, $default);
         }
 
-        return Config::get('thinkcache');
+        return config('plugin.bilulanlv.think-cache.app');
     }
 
     /**

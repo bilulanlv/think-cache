@@ -10,10 +10,10 @@ composer require bilulanlv/think-cache
 ```
 
 ## 配置文件
-配置文件参考文档，如下所示，默认自动安装路径为config/thinkcache.php
+配置文件自动安装路径在 config/plugin/bilulanlv/think-cache/app.php
 ```php
 // 如果ThinkORM需要使用缓存，请取消注释，或者在其他合适的地方引入
-//\think\facade\Db::setCache(new \bilulanlv\ThinkCache\CacheManager());
+//\think\facade\Db::setCache(new \Bilulanlv\ThinkCache\CacheManager());
 
 return [
     // 默认缓存驱动
@@ -27,7 +27,7 @@ return [
             // 服务器地址
             'host' => '127.0.0.1',
             // 缓存前缀
-            'prefix' => '',
+            'prefix' => 'cache',
             // 默认缓存有效期 0表示永久缓存
             'expire'     => 0,
             // think-cache官方没有这个参数，由于生成的tag键默认不过期，如果tag键数量很大，避免长时间占用内存，可以设置一个超过其他缓存的过期时间，0为不设置
