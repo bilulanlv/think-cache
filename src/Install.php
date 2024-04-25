@@ -57,7 +57,7 @@ class Install
     public static function uninstallByRelation()
     {
         foreach (static::$pathRelation as $source => $dest) {
-            $path = base_path()."/$dest";
+            $path = base_path()."/$dest". "/thinkcache.php";
             if (!is_dir($path) && !is_file($path)) {
                 continue;
             }
