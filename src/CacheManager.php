@@ -16,6 +16,7 @@ use DateInterval;
 use DateTimeInterface;
 use Psr\SimpleCache\CacheInterface;
 use think\helper\Arr;
+use Webman\Config;
 
 /**
  * 缓存管理类
@@ -45,10 +46,10 @@ class CacheManager extends Manager implements CacheInterface
     public function getConfig(string $name = null, $default = null)
     {
         if (!is_null($name)) {
-            return config('plugin.bilulanlv.think-cache.app' . $name, $default);
+            return Config::get('plugin.bilulanlv.think-cache.app' . $name, $default);
         }
 
-        return config('plugin.bilulanlv.think-cache.app');
+        return Config::get('plugin.bilulanlv.think-cache.app');
     }
 
     /**
