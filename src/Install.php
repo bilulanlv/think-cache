@@ -1,16 +1,15 @@
 <?php
-
-namespace bilulanlv\ThinkCache;
+namespace Bilulanlv\ThinkCache;
 
 class Install
 {
-    public const WEBMAN_PLUGIN = true;
+    const WEBMAN_PLUGIN = true;
 
     /**
      * @var array
      */
-    protected static $pathRelation = array(
-        'config' => 'config',
+    protected static $pathRelation = array (
+        'config/plugin/bilulanlv/think-cache' => 'config/plugin/bilulanlv/think-cache',
     );
 
     /**
@@ -46,7 +45,8 @@ class Install
             }
             //symlink(__DIR__ . "/$source", base_path()."/$dest");
             copy_dir(__DIR__ . "/$source", base_path()."/$dest");
-            echo "Create $dest";
+            echo "Create $dest
+";
         }
     }
 
@@ -57,11 +57,12 @@ class Install
     public static function uninstallByRelation()
     {
         foreach (static::$pathRelation as $source => $dest) {
-            $path = base_path()."/$dest". "/thinkcache.php";
+            $path = base_path()."/$dest";
             if (!is_dir($path) && !is_file($path)) {
                 continue;
             }
-            echo "Remove $dest";
+            echo "Remove $dest
+";
             if (is_file($path) || is_link($path)) {
                 unlink($path);
                 continue;
@@ -69,4 +70,5 @@ class Install
             remove_dir($path);
         }
     }
+
 }

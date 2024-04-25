@@ -1,8 +1,10 @@
 <?php
 // 如果ThinkORM需要使用缓存，请取消注释，或者在其他合适的地方引入
-//\think\facade\Db::setCache(new \bilulanlv\ThinkCache\CacheManager());
+//\think\facade\Db::setCache(new \Bilulanlv\ThinkCache\CacheManager());
 
 return [
+    // 开启插件
+    'enable' => true,
     // 默认缓存驱动
     'default' => 'redis',
     // 缓存连接方式配置

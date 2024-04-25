@@ -10,13 +10,12 @@
 // +----------------------------------------------------------------------
 declare(strict_types = 1);
 
-namespace bilulanlv\ThinkCache;
+namespace Bilulanlv\ThinkCache;
 
 use DateInterval;
 use DateTimeInterface;
 use Psr\SimpleCache\CacheInterface;
 use think\helper\Arr;
-use Webman\Config;
 
 /**
  * 缓存管理类
@@ -25,7 +24,7 @@ use Webman\Config;
 class CacheManager extends Manager implements CacheInterface
 {
 
-    protected $namespace = '\\bilulanlv\\ThinkCache\\driver\\';
+    protected $namespace = '\\Bilulanlv\\ThinkCache\\driver\\';
 
     /**
      * 默认驱动

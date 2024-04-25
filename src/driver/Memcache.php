@@ -10,11 +10,11 @@
 // +----------------------------------------------------------------------
 declare (strict_types = 1);
 
-namespace bilulanlv\ThinkCache\driver;
+namespace Bilulanlv\ThinkCache\driver;
 
 use DateInterval;
 use DateTimeInterface;
-use bilulanlv\ThinkCache\Driver;
+use Bilulanlv\ThinkCache\Driver;
 
 /**
  * Memcache缓存类

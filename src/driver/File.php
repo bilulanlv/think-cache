@@ -10,11 +10,11 @@
 // +----------------------------------------------------------------------
 declare (strict_types = 1);
 
-namespace bilulanlv\ThinkCache\driver;
+namespace Bilulanlv\ThinkCache\driver;
 
 use DateTimeInterface;
 use FilesystemIterator;
-use bilulanlv\ThinkCache\Driver;
+use Bilulanlv\ThinkCache\Driver;
 
 /**
  * 文件缓存类

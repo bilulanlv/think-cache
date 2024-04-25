@@ -10,7 +10,7 @@
 // +----------------------------------------------------------------------
 declare(strict_types = 1);
 
-namespace bilulanlv\ThinkCache;
+namespace Bilulanlv\ThinkCache;
 
 use DateInterval;
 use DateTimeInterface;

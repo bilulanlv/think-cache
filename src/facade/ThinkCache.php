@@ -10,13 +10,13 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-namespace bilulanlv\ThinkCache\facade;
+namespace Bilulanlv\ThinkCache\facade;
 
 use think\Facade;
 
 /**
- * @see \bilulanlv\ThinkCache\CacheManager
- * @mixin \bilulanlv\ThinkCache\CacheManager
+ * @see \Bilulanlv\ThinkCache\CacheManager
+ * @mixin \Bilulanlv\ThinkCache\CacheManager
  */
 class ThinkCache extends Facade
 {
@@ -27,6 +27,6 @@ class ThinkCache extends Facade
      */
     protected static function getFacadeClass()
     {
-        return 'bilulanlv\ThinkCache\CacheManager';
+        return 'Bilulanlv\ThinkCache\CacheManager';
     }
 }

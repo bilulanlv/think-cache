@@ -10,7 +10,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "bilulanlv\\ThinkCache\\": "src"
+            "Bilulanlv\\ThinkCache\\": "src"
         }
     },
     "authors": [
