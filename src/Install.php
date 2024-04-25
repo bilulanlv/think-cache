@@ -10,7 +10,7 @@ class Install
      * @var array
      */
     protected static $pathRelation = array(
-        'config/plugin/bilulanlv/think-cache' => 'config/plugin/bilulanlv/think-cache',
+        'config' => 'config',
     );
 
     /**

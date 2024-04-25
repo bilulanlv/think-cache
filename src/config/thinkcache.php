@@ -1,6 +1,6 @@
 <?php
 // 如果ThinkORM需要使用缓存，请取消注释，或者在其他合适的地方引入
-\think\facade\Db::setCache(new \bilulanlv\ThinkCache\CacheManager());
+//\think\facade\Db::setCache(new \bilulanlv\ThinkCache\CacheManager());
 
 return [
     // 默认缓存驱动
