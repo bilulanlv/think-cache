@@ -47,7 +47,7 @@ return [
 ```
 ## 使用说明
 ```php
-use bilulanlv\ThinkCache\facade\ThinkCache;
+use Bilulanlv\ThinkCache\facade\ThinkCache;
 
 ThinkCache::set('name', $value, 3600);
 ThinkCache::remember('start_time', time());
