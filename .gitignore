@@ -2,8 +2,8 @@ composer.lock
 .DS_Store
 .phpunit.result.cache
 /vendor/
-/.idea
-/.vscode
+.idea
+.vscode
 /.settings
 /.buildpath
 /.project
